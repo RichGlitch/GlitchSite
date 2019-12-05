@@ -104,7 +104,58 @@
         <div class="row">
             <!-- Post Content -->
             <div id="post-container" class="col-md-8" role="main">
-                <div class="post-container">
+                <div class="post-container" *ngFor="let post of posts">
+                    <article class="post">
+                        <div class="post-thumbnail">
+                            <a href="#"><img src="../../../assets/images/blog-post/blog-post-2.jpg" alt="Post Thumbnail Image"></a>
+                        </div>
+                        <!-- /.post-thumbnail -->
+                        <div class="post-content">
+                            <h2 class="post-title">
+                                <a href="single-page.html">{{post.title}}</a>
+                            </h2>
+                            <div class="entry">
+                                <p>
+                                    {{post.content}}
+                                </p>
+                            </div>
+                            <!-- /.entry -->
+                            <footer class="post-meta">
+                                <div class="continue-reading pull-left">
+                                    <a href="blog-single.html">Continue reading ...</a>
+                                </div>
+                                <!-- /.continue-reading -->
+                                <div class="entry-meta pull-right">
+                                    <span class="entry-date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    April 11
+                                                </span>
+                                    <span class="author">
+                                                    <a href="#" rel="author">
+                                                        <i class="fa fa-user"></i>
+                                                        JWTheme
+                                                    </a> 
+                                                </span>
+                                    <span class="comments-link">
+                                                    <a href="#" > 
+                                                        <i class="fa fa-comment-o"></i>
+                                                        32
+                                                    </a>
+                                                </span>
+                                    <span class="tag-links">
+                                                    <i class="fa fa-tag"></i>
+                                                    <a href="#" rel="tag">HTML</a>
+                                                    <a href="#" rel="tag">Template</a>
+                                                </span>
+                                </div>
+                                <!-- /.entry-meta -->
+                            </footer>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-content -->
+                    </article>
+                    <!-- /.post -->
+
                     <article class="post">
                         <div class="post-thumbnail">
                             <a href="#"><img src="../../../assets/images/blog-post/blog-post-2.jpg" alt="Post Thumbnail Image"></a>

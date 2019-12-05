@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 declare function init_plugins();
 
 @Component({
@@ -8,11 +9,23 @@ declare function init_plugins();
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  posts: any;
+ // headers = new HttpHeaders({'Content-Type':'application/json; charset=utf-8'});
 
+  constructor(private http: HttpClient) { }
   ngOnInit() {
     init_plugins();
-
+    this.getPosts();
   }
 
+  getPosts(){
+    this.http.get('https://localhost:44370/api/posts',{headers:{'Content-Type':'application/json; charset=utf-8'}})
+    .subscribe(resp => {
+      this.posts = resp;
+      console.log(this.posts);
+    },
+    error => {
+      console.log(error);
+    });
+  }
 }
