@@ -21,6 +21,18 @@ export class PostsListComponent implements OnInit {
       {
         title: "Test 2",
         content: "content"
+      },
+      {
+        title: "Test 4",
+        content: "content"
+      },
+      {
+        title: "Test 8",
+        content: "content"
+      },
+      {
+        title: "Test 27",
+        content: "content"
       }
     ];
   }

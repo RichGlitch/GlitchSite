@@ -5,9 +5,9 @@
             <div id="post-container" class="col-md-8" role="main">
                 <!-- <div class="post-container" *ngFor="let post of posts"> -->
                 <div class="post-container">
-                    <article class="post" *ngFor="let post of posts">
-                        <app-post-item [postItem]="post"></app-post-item>
-                    </article>
+
+                    <app-post-item *ngFor="let post of posts" [postItem]="post"></app-post-item>
+
 
 
                     <nav class="paging-navigation" role="navigation">
