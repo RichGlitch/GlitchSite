@@ -7,6 +7,7 @@ declare function init_plugins();
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
+
 export class BlogComponent implements OnInit {
 
   posts: any;
@@ -15,7 +16,7 @@ export class BlogComponent implements OnInit {
   constructor(private http: HttpClient) { }
   ngOnInit() {
     init_plugins();
-    this.getPosts();
+   // this.getPosts();
   }
 
   getPosts(){

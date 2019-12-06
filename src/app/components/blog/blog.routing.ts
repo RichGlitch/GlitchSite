@@ -1,10 +1,10 @@
-import {Routes, RouterModule} from '@angular/router';
-import { BlogComponent } from './blog.component';
+// import {Routes, RouterModule} from '@angular/router';
+// import { BlogComponent } from './blog.component';
 
 
-const blogRoutes: Routes = [
-    {path: 'blog', component: BlogComponent},
-];
+// const blogRoutes: Routes = [
+//    // {path: 'blog', component: BlogComponent},
+// ];
 
 
-export const blogRouting = RouterModule.forRoot(blogRoutes);
+// //export const blogRouting = RouterModule.forRoot(blogRoutes);

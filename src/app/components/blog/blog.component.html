@@ -1,7 +1,136 @@
-<app-menu></app-menu>
-<app-header></app-header>
+<!-- Menu -->
+<div class="main-menu-continer">
+    <div id="main-menu" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Responsive Navigation -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-bars"></i>
+					</button>
+                <!-- /.navbar-toggle -->
+                <!-- Logo -->
+                <a class="navbar-brand" href="./">
+                    <span>Top</span>Class
+                </a>
+                <!-- /.navbar-brand -->
+            </div>
+            <!-- /.navbar-header -->
+
+            <nav class="collapse navbar-collapse" role="navigation">
+                <!-- Main navigation -->
+                <ul id="headernavigation" class="nav navbar-nav pull-right">
+                    <li><a href="./#page-top">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#team">Team</a></li>
+                    <li><a href="./index.html#we-do">Service</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="./index.html#works">Works</a>
+                        <ul class="sub-menu">
+                            <li><a href="portfolio.html">Portfolio Page</a></li>
+                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                        </ul>
+                        <!-- /.sub-menu -->
+                    </li>
+                    <li class="active menu-item-has-children">
+                        <a href="./index.html#blog">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog-page.html">Blog Page</a></li>
+                            <li><a href="single-page.html">Single Page</a></li>
+                            <li><a href="#">Demo Menu 1</a></li>
+                            <li><a href="#">Demo Menu 2</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Demo Menu 3</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Demo Menu 1</a></li>
+                                    <li><a href="#">Demo Menu 2</a></li>
+                                    <li><a href="#">Demo Menu 3</a></li>
+                                </ul>
+                                <!-- /.sub-menu -->
+                            </li>
+                        </ul>
+                        <!-- /.sub-menu -->
+                    </li>
+
+                    <li class="menu-item-has-children">
+                        <a href="shortcodes.html" class="not-in-home">Shortcodes</a>
+                        <ul class="sub-menu">
+                            <li><a href="404.html">404 Page</a></li>
+                        </ul>
+                        <!-- /.sub-menu -->
+                    </li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+                <!-- /.nav .navbar-nav -->
+            </nav>
+            <!-- /.navbar-collapse  -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#main-menu -->
+</div>
+<!-- /.main-menu-continer -->
+<!-- Menu End -->
+
+
+
+
+<!-- Page Name Section-->
+<div id="page-name-sec">
+    <div class="parallax-style page-name-sec">
+        <div class="pattern">
+            <div class="container">
+                <p class="page-name">
+                    Our Blog
+                </p>
+                <!-- /.page-name -->
+                <p class="page-location">
+                    <a href="index.html">Home</a> <a href="blog-page.html">Blog</a> Single Post
+                </p>
+                <!-- /.page-location -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.pattern -->
+    </div>
+    <!-- /.parallax-style  /.page-name-sec-->
+</div>
+<!-- #page-name-sec -->
+<!-- Page Name Section End-->
+
 
 <router-outlet></router-outlet>
 
-<app-footer>
-</app-footer>
+<!-- Footer Section -->
+<footer id="footer-section">
+    <div class="footer-section parallax-style">
+        <div class="pattern">
+            <div class="container">
+                <div class="footer-social-btn">
+                    <a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook-btn"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="dribbble-btn"><i class="fa fa-dribbble"></i></a>
+                    <a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="pinterest-btn"><i class="fa fa-pinterest"></i></a>
+                    <a href="#" class="google-plus-btn"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="youtube-btn"><i class="fa fa-youtube"></i></a>
+                    <a href="#" class="rss-btn"><i class="fa fa-rss"></i></a>
+                </div>
+                <!-- /.footer-social-btn -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.pattern -->
+    </div>
+    <!-- /.footer-section -->
+
+    <div class="copyrights">
+        <div class="container">
+            &copy; <a href="#">TopClass</a> 2014 - Developed by <a href="#">JWTheme</a>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.copyrights -->
+</footer>
+<!-- /#footer-section -->
+<!-- Footer Section End -->

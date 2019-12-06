@@ -5,14 +5,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { routing, appRoutingProviders } from './app.routing';
+import { APP_ROUTES } from './app.routing';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PostsListComponent } from './components/blog/posts-list/posts-list.component';
 import { PostItemComponent } from './components/blog/post-item/post-item.component';
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
-import { MenuComponent } from './components/blog/shared/menu/menu.component';
-import { HeaderComponent } from './components/blog/shared/header/header.component';
-import { blogRouting } from './components/blog/blog.routing';
 
 @NgModule({
   declarations: [
@@ -22,17 +19,14 @@ import { blogRouting } from './components/blog/blog.routing';
     FooterComponent,
     PostsListComponent,
     PostItemComponent,
-    SinglePostComponent,
-    MenuComponent,
-    HeaderComponent
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
-    routing,
-    //blogRouting,
+    APP_ROUTES,
     HttpClientModule
   ],
-  providers: [appRoutingProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
