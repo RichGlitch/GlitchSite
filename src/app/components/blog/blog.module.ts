@@ -1,4 +1,6 @@
 import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser'
+
 import { MenuComponent } from "./shared/menu/menu.component";
 import { BlogComponent } from './blog.component';
 import { HeaderComponent } from "./shared/header/header.component";
@@ -30,7 +32,8 @@ import { PagenotFoundComponent } from './shared/pagenot-found/pagenot-found.comp
         PagenotFoundComponent
     ],
     imports:[
-        blogRouting
+        blogRouting,
+        BrowserModule
     ]
     
 })
