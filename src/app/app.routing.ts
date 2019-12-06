@@ -6,12 +6,12 @@ import { PostsListComponent } from './components/blog/posts-list/posts-list.comp
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 
 const appRoutes: Routes = [
-    {path: '', component: BlogComponent,
-        children: [
-            {path: 'blog', component: PostsListComponent},
-            {path: 'post', component: SinglePostComponent},
-            {path: '', redirectTo: '/blog', pathMatch:'full'}
-        ]},
+    // {path: '', component: BlogComponent,
+    //     children: [
+    //         {path: 'blog', component: PostsListComponent},
+    //         {path: 'post', component: SinglePostComponent},
+    //         {path: '', redirectTo: '/blog', pathMatch:'full'}
+    //     ]},
     {path: 'home', component: LandingPageComponent}
     //{path: '**', redirectTo: 'blog', pathMatch:'full'}
 
