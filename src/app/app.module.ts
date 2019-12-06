@@ -7,17 +7,29 @@ import { BlogComponent } from './components/blog/blog.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { routing, appRoutingProviders } from './app.routing';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PostsListComponent } from './components/blog/posts-list/posts-list.component';
+import { PostItemComponent } from './components/blog/post-item/post-item.component';
+import { SinglePostComponent } from './components/blog/single-post/single-post.component';
+import { MenuComponent } from './components/blog/shared/menu/menu.component';
+import { HeaderComponent } from './components/blog/shared/header/header.component';
+import { blogRouting } from './components/blog/blog.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogComponent,
     LandingPageComponent,
-    FooterComponent
+    FooterComponent,
+    PostsListComponent,
+    PostItemComponent,
+    SinglePostComponent,
+    MenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     routing,
+    //blogRouting,
     HttpClientModule
   ],
   providers: [appRoutingProviders],
