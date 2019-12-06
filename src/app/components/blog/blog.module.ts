@@ -7,6 +7,7 @@ import { PostItemComponent } from './post-item/post-item.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { blogRouting } from "./blog.routing";
 import { BlogfooterComponent } from './shared/blogfooter/blogfooter.component';
+import { PagenotFoundComponent } from './shared/pagenot-found/pagenot-found.component';
 
 @NgModule({
     declarations:[
@@ -16,7 +17,8 @@ import { BlogfooterComponent } from './shared/blogfooter/blogfooter.component';
         PostsListComponent,
         PostItemComponent,
         SinglePostComponent,
-        BlogfooterComponent
+        BlogfooterComponent,
+        PagenotFoundComponent
     ],
     exports:[
         BlogComponent,
@@ -24,7 +26,8 @@ import { BlogfooterComponent } from './shared/blogfooter/blogfooter.component';
         HeaderComponent,
         PostsListComponent,
         PostItemComponent,
-        SinglePostComponent
+        SinglePostComponent,
+        PagenotFoundComponent
     ],
     imports:[
         blogRouting
