@@ -10,6 +10,7 @@ import { SinglePostComponent } from './single-post/single-post.component';
 import { blogRouting } from "./blog.routing";
 import { BlogfooterComponent } from './shared/blogfooter/blogfooter.component';
 import { PagenotFoundComponent } from './shared/pagenot-found/pagenot-found.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
     declarations:[
@@ -20,7 +21,8 @@ import { PagenotFoundComponent } from './shared/pagenot-found/pagenot-found.comp
         PostItemComponent,
         SinglePostComponent,
         BlogfooterComponent,
-        PagenotFoundComponent
+        PagenotFoundComponent,
+        SidebarComponent
     ],
     exports:[
         BlogComponent,

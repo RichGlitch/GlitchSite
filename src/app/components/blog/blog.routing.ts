@@ -8,7 +8,7 @@ const blogRoutes: Routes = [
     {path: '', component: BlogComponent,
         children: [
             {path: 'blog', component: PostsListComponent},
-            {path: 'post', component: SinglePostComponent},
+            {path: 'post/:postid', component: SinglePostComponent},
             {path: '', redirectTo: '/blog', pathMatch:'full'}
     ]},
 ];
